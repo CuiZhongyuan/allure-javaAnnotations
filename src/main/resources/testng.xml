@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" verbose="2">
+    <parameter name="browserType" value="chrome" />
+    <parameter name="appURL" value="https://google.com" />
+    <test name="User allure2">
+        <classes>
+            <class name="com.allurejava.test.BasePageTest" />
+            <class name="com.allurejava.test.SignInPageTest" />
+            <class name="com.allurejava.test.CreateAccountTest" />
+        </classes>
+    </test>
+</suite>
