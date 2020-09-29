@@ -87,3 +87,11 @@
 @Attachment
 @Link
 ```
+
+- 使用先下载allure的zip包解压，然后配置环境变量即可
+- 然后通过cmd或者IDEA 的Terminal功能，在当前项目下运行命令
+```$xslt
+allure serve allure-results
+```
+即可自动打开web页面测报告
+![](https://img2020.cnblogs.com/blog/1891174/202009/1891174-20200929155736438-342403854.jpg)
