@@ -1,4 +1,4 @@
-package com.allurejava.test;
+package com.allurejava.apges;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;

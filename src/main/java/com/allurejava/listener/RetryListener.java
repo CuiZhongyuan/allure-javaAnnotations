@@ -9,8 +9,8 @@ import org.testng.ITestResult;
 
 public class RetryListener {
     public void onTestFailure(ITestResult result) {
-        System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
-        System.out.println(result.getMethod().getMethodName() + " failed!");
+        System.out.println("*** 测试执行 " + result.getMethod().getMethodName() + " 失败...");
+        System.out.println(result.getMethod().getMethodName() + " 失败!");
 
         ITestContext context = result.getTestContext();
         WebDriver driver = (WebDriver) context.getAttribute("driver");

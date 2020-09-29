@@ -1,4 +1,4 @@
-package com.allurejava.test;
+package com.allurejava.apges;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

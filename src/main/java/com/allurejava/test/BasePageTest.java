@@ -1,5 +1,6 @@
 package com.allurejava.test;
 
+import com.allurejava.apges.BasePage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
