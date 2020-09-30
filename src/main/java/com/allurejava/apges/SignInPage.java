@@ -27,7 +27,7 @@ public class SignInPage {
     }
 
     public boolean verifySignInPageTitle() {
-        String expectedTitle = "登录-谷歌帐户";
+        String expectedTitle = "登录-百度帐户";
         return getSignInPageTitle().contains(expectedTitle);
     }
 
@@ -39,7 +39,7 @@ public class SignInPage {
         String pageSubText = subText.getText();
 
         String conpHeaderText = text1 + pageSubText;
-        String expectedPageText = "用你的谷歌帐户登录";
+        String expectedPageText = "用你的百度帐户登录";
         return conpHeaderText.equalsIgnoreCase(expectedPageText);
     }
 
@@ -49,15 +49,13 @@ public class SignInPage {
             element.click();
         return new CreateAccountPage(driver);
     }
-
-    @Step("验证参数 uname {0 and password {1}")
+    @Step("验证参数 uname {0} and password {1}")
     public boolean verifySignIn(String uname, String pwd) {
         enterUserName(uname);
         enterPassword(pwd);
         clickOnSignIn();
         return getErrorMessage().contains("不正确的");
     }
-
     @Step("输入 username {0}")
     public void enterUserName(String userName) {
         WebElement emailTxtBox = driver.findElement(emailTextBox);

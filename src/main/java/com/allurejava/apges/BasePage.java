@@ -4,18 +4,19 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 public class BasePage {
     protected WebDriver driver;
-    private By signInButton = By.linkText("登录");
+    private By signInButton = By.xpath("//*[@id=\"su\"]");
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    @Step("点击登录按钮")
+    @Step("点击输入框")
     public SignInPage clickSignInBtn() {
-        System.out.println("点击登录按钮");
+        System.out.println("点击输入框");
         WebElement signInBtnElement = driver.findElement(signInButton);
         if (signInBtnElement.isDisplayed() || signInBtnElement.isEnabled())
             signInBtnElement.click();

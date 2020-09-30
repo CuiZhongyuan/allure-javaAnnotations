@@ -1,6 +1,6 @@
 package com.allurejava.util;
 
-import com.allurejava.listener.RetryListener;
+import com.allurejava.listener.TestFailListener;
 import org.testng.TestNG;
 import org.testng.xml.XmlClass;
 import org.testng.xml.XmlSuite;
@@ -20,7 +20,7 @@ public class BaseTestngInit {
         //创建testng对象
         TestNG testng = new TestNG();
         //创建报告监听器对象
-        RetryListener reportListener = new RetryListener();
+        TestFailListener reportListener = new TestFailListener();
 //        TestLogListener testLogListener = new TestLogListener();
         //设置需要执行的测试用例类
 //        testng.setTestClasses(new Class[] { com.iappium.testcase.YynCases.class});

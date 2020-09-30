@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class CreateAccountPage {
     private WebDriver driver;
-    private By headerPageTxt = By.cssSelector("");
+    private By headerPageTxt = By.cssSelector("#s-top-left > a:nth-child(1)");
 
     public CreateAccountPage(WebDriver driver) {
         this.driver = driver;
@@ -18,13 +18,13 @@ public class CreateAccountPage {
     }
 
     public boolean verifyPageTitle() {
-        String pageTitle = "创建您的谷歌帐户";
+        String pageTitle = "查看百度Title";
         return getPageTitle().contains(pageTitle);
     }
 
     public boolean verifyCreateAccountPageText() {
         WebElement element = driver.findElement(headerPageTxt);
-        String pageText = "创建您的谷歌帐户";
+        String pageText = "点击百度新闻";
         return element.getText().contains(pageText);
     }
 

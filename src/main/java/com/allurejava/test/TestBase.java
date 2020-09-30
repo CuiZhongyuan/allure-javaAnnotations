@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -52,17 +53,16 @@ public class TestBase {
     public void initializeTestBaseSetup(String browserType, String appURL) {
         try {
             setDriver(browserType, appURL);
-
         } catch (Exception e) {
             System.out.println("Error....." + e.getStackTrace());
         }
     }
+    @AfterMethod
+    public void  sceen(){
 
+    }
     @AfterClass
     public void tearDown() {
         driver.quit();
     }
-
-
-
 }

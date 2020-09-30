@@ -5,7 +5,7 @@ public class EnterCases {
     BaseTestngInit baseTestngInit = new BaseTestngInit();
 
     /**
-     * 驱动存放路径(小程序的webdriver) target/classes/chromedriver/chromedriver.exe
+     * 驱动存放路径(小程序的webdriver) target/classes/testng.xml
      */
     private String xmlPath=this.getClass().getClassLoader().getResource("testng.xml").getPath();
 

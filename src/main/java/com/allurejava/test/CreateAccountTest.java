@@ -3,6 +3,7 @@ package com.allurejava.test;
 import com.allurejava.apges.BasePage;
 import com.allurejava.apges.CreateAccountPage;
 import com.allurejava.apges.SignInPage;
+import com.allurejava.listener.TestFailListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -10,6 +11,7 @@ import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 public class CreateAccountTest  extends TestBase {
