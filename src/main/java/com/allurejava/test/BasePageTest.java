@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Listeners(TestFailListener.class)
 public class BasePageTest extends TestBase  {
     private WebDriver driver;
 

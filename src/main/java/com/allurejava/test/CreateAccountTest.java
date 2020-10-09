@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(TestFailListener.class)
 public class CreateAccountTest  extends TestBase {
     private WebDriver driver;
     private SignInPage signInPage;
