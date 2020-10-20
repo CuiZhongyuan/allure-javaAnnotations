@@ -1,6 +1,6 @@
 package com.allurejava.listener;
 
-import com.allurejava.test.TestBase;
+import com.allurejava.base.TestBase;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
@@ -17,6 +17,7 @@ public class TestFailListener  extends TestListenerAdapter {
         System.out.println(result.getMethod().getMethodName() + " 失败!");
         super.onTestFailure(result);
         TestBase testBase = (TestBase) result.getInstance();
+        //获取驱动
         WebDriver driver = testBase.getDriver();
         // 在报告中附加屏幕截图
         saveFailureScreenShot(driver);

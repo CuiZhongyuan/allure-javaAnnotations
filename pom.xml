@@ -64,7 +64,7 @@
             <artifactId>hutool-all</artifactId>
             <version>5.3.5</version>
         </dependency>
-        <!--WebDriverManager是一个库，它可以自动管理Selenium WebDriver所需的驱动程序（例如chromedriver，geckodriver等）-->
+        <!--WebDriverManager是一个库，它可以自动管理Selenium WebDriver所需的驱动程序（例如chromedriver，geckodriver等）,会自动在依赖包下webdriver文件夹下下载驱动-->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
@@ -74,6 +74,18 @@
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>3.13.2</version>
+        </dependency>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+        </dependency>
+        <!-- slf4j -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
         </dependency>
     </dependencies>
 
